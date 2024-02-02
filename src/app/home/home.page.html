@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+
+  <!-- Titulo -->
+
+<ion-header class="header">
+
+  <ion-grid>
+
+    <ion-row class="titulo ion-justify-content-center">
+      <ion-col size="12">
+        <h1>FEIRA</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col offset="10" offset-md="6" offset-lg="2">
+        <h3>Since 2024</h3>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Conteudo principal -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content>
+
+    <div>
+      <ion-input label="Usuário" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+      <ion-input label="Senha" label-placement="floating" fill="outline" type="password" placeholder="Enter text"></ion-input>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <h3><a href="">Esqueci a senha</a></h3>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h3><a href="">Registrar-se</a></h3>
+      </ion-col>
+    </ion-row>
+
+  </ion-content>
