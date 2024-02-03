@@ -1,45 +1,67 @@
-
-  <!-- Titulo -->
-
-<ion-header class="header">
-
+<ion-content [fullscreen]="true">
   <ion-grid>
-
-    <ion-row class="titulo ion-justify-content-center">
-      <ion-col size="12">
-        <h1>FEIRA</h1>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col offset="10" offset-md="6" offset-lg="2">
-        <h3>Since 2024</h3>
-      </ion-col>
-    </ion-row>
     
+    <!-- Esquerda -->
+
+    <ion-row>
+      <ion-col size="6">
+
+        <ion-row class="esquerda ion-text-center">
+          <ion-col size="8">
+            <h1>FEIRA</h1>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <h3 offset="3">Since 2024</h3>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+
+      <!-- Direita -->
+
+      <ion-col size="6">
+
+        <ion-row class="direita ion-justify-content-center ion-text-center">
+          <ion-col size="8" class="bloco">
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="4">
+                <h2 class="titulo">Login</h2>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="10">
+                <ion-input class="input" label="Usuário"></ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="10">
+                <ion-input class="input" label="Senha"></ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="5">
+                <h3><a class="link" href="">Esqueci a senha</a></h3>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="4">
+                <h3><a class="link" href="">Cadastrar-se</a></h3>                
+              </ion-col>
+            </ion-row>
+
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
-
-</ion-header>
-
-  <!-- Conteudo principal -->
-
-  <ion-content>
-
-    <div>
-      <ion-input label="Usuário" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
-      <ion-input label="Senha" label-placement="floating" fill="outline" type="password" placeholder="Enter text"></ion-input>
-    </div>
-
-    <ion-row>
-      <ion-col>
-        <h3><a href="">Esqueci a senha</a></h3>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <h3><a href="">Registrar-se</a></h3>
-      </ion-col>
-    </ion-row>
-
-  </ion-content>
+</ion-content>
